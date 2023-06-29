@@ -1,6 +1,153 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'MiFuente'; /* Nombre de la fuente */
+  src: url('../resources/Norse-Bold.otf') format('truetype'); /* Ruta relativa al archivo de la fuente */
+  /* Puedes especificar otros formatos de fuente aquí si tienes archivos adicionales */
+}
 
 body {
   font-family: sans-serif, 'Roboto', system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: rgb(51, 127, 182);
+  background-color: rgb(255, 255, 255);
+  padding: 1.7em;
+}
+
+h2{
+  font-family: 'MiFuente';
+  font-size: 50px;
+}
+
+main{
+  width: 90%;
+  display: flex;
+  -webkit-box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.84); 
+  box-shadow: 5px 4px 15px 4px rgba(0,0,0,0.84);
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.panel-lateral{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+
+.panel-lateral img{
+  width: 400px;
+  height: 700px;
+}
+
+.contenedor-titulo{
+  display: flex;
+  background-color: rgb(69, 70, 70, 0.8);
+  padding: 10px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contenedor-titulo img{
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+/*CONTENEDOR DERECHA*/
+.contenedor-info{
+  width: 100%;
+  padding: 0.1em;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-frase{
+  padding: 4em;
+  background-color: rgb(236, 238, 239);
+  font-weight: bold;
+}
+
+.contenedor-form{
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+}
+
+form{
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 800px;
+  height: 200px;
+  /* Form outline */
+  padding: 1em;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-izquierda, .form-derecha{
+  flex: 1;
+  padding: 0 10px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+h3{
+  font-size: large;
+  font-weight: bold;
+}
+
+.contenedor-inferior{
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: rgb(236, 238, 239);
+}
+
+.contenedor-inferior p{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 8px;
+  padding: 0.7em;
+  cursor: pointer;
+  margin-left: 2em;
+}
+
+input[type="password"]:invalid, input[type="email"]:invalid {
+  border-color: red; /* Cambia el color del borde a rojo */
+  background-color: pink; /* Cambia el color de fondo a rosa */
 }

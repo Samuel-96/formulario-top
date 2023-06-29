@@ -6,9 +6,60 @@
     <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <script src="script.js" defer></script>
-    <title>Título</title>
+    <title>Iniciar sesión</title>
 </head>
 <body>
-    <h1>Texto de prueba</h1>
-    </body>
+    <main>
+        <div class="panel-lateral">
+
+            <img src="./resources/foto-lateral.jpg" alt="imagen lateral">
+    
+            <div class="contenedor-titulo">
+                <div class="logo"><img src="./resources/github-logo.png" alt="logo de la web"></div>
+                <div><h2>ODIN</h2></div>
+            </div>
+        </div>
+
+        <div class="contenedor-info">
+            <div class="contenedor-frase">
+                <p>¡Esto no es un servicio online de verdad! Sabes que necesitas algo así en tu vida para ayudarte a conseguir tus sueños. <i>Crea</i> una cuenta para empezar.</p>
+                <p><i>Sabes</i> que quieres.</p>
+            </div>
+
+            <div class="contenedor-form">
+                <h3>¡Adelante!</h3>
+                <form action="ejem" method="post">
+
+                        <div class="form-izquierda">
+                            <label for="first-name">NOMBRE</label>
+                            <input type="text" id="first-name" name="first-name">
+
+                            <label for="second-name">APELLIDO</label>
+                            <input type="text" id="second-name" name="second-name">
+
+                            <label for="mail">EMAIL</label>
+                            <input type="EMAIL" id="mail" name="mail">
+                        </div>
+
+                        <div class="form-derecha">
+                            <label for="mail">NÚMERO DE TELÉFONO</label>
+                            <input type="text" id="mail" name="mail">
+
+                            <label for="password">CONTRASEÑA</label>
+                            <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="La contraseña debe contener al menos un dígito, una letra minúscula, una letra mayúscula y no debe contener espacios en blanco">
+
+                            <label for="repeat-password">REPETIR CONTRASEÑA</label>
+                            <input type="password" id="repeat-password" name="repeat-password">
+                        </div>
+
+                </form>
+            </div>
+            
+            <div class="contenedor-inferior">
+                <button type="submit">CREAR CUENTA</button>
+                <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
